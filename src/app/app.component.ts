@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter } from '@angular/core';
+import * as _ from 'lodash';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-cli-libs-externas';
+
+  list = _.map([1, 2, 3], (n) => ` # ${n}`);
+
+
 }
